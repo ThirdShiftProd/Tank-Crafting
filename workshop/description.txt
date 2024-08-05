@@ -1,0 +1,7 @@
+[h1]Tank Crafting[/h1]
+
+Makes propane tanks craftable.
+
+
+
+Compatable with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2680473910]The Workshop[/url]
