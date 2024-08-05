@@ -1,11 +1,10 @@
-getActivatedMods():contains("TheWorkshop(new version)")
 module TankCrafting
 {
     imports
     {
         Base,
     }
-    recipe Craft A Large Propane Tank
+    recipe Craft Large Propane Tank
     {
         SheetMetal=20,
         ScrapMetal=30,
@@ -18,8 +17,9 @@ module TankCrafting
         CanBeDoneFromFloor:true,
         OnCreate:Recipe.OnCreate.CreateEmptyTank,
         AnimNode:BlowTorch,
+        OnCanPerform:Recipe.OnCanPerform.CanMakeCompatTanks,
     }
-    recipe Craft A Huge Propane Tank
+    recipe Craft Huge Propane Tank
     {
         SheetMetal=35,
         ScrapMetal=40,
@@ -32,5 +32,6 @@ module TankCrafting
         CanBeDoneFromFloor:true,
         OnCreate:Recipe.OnCreate.CreateEmptyTank,
         AnimNode:BlowTorch,
+        OnCanPerform:Recipe.OnCanPerform.CanMakeCompatTanks,
     }
 }
