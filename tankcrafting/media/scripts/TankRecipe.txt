@@ -1,0 +1,22 @@
+module TankCrafting
+{
+    imports
+	{
+		Base,
+	}
+    recipe Craft Propane Tank
+    {
+        SheetMetal=10,
+        ScrapMetal=20,
+        BlowTorch=5,
+        keep [Recipe.GetItemTypes.WeldingMask]/WeldingMask,
+        Result:PropaneTank,
+        Time:60,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+        Sound:BlowTorch,
+        CanBeDoneFromFloor:true,
+        Prop1:BlowTorch,
+        OnCreate:Recipe.OnCreate.MakeATank,
+        AnimNode:BlowTorch,
+    }
+}

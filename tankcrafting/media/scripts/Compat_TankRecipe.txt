@@ -1,0 +1,36 @@
+getActivatedMods():contains("TheWorkshop(new version)")
+module TankCrafting
+{
+    imports
+    {
+        Base,
+    }
+    recipe Craft A Large Propane Tank
+    {
+        SheetMetal=20,
+        ScrapMetal=30,
+        BlowTorch=7,
+        keep [Recipe.GetItemTypes.WeldingMask]/WeldingMask,
+        Result:LargePropaneTank,
+        Time:120,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+        Sound:BlowTorch,
+        CanBeDoneFromFloor:true,
+        OnCreate:Recipe.OnCreate.MakeATank,
+        AnimNode:BlowTorch,
+    }
+    recipe Craft A Huge Propane Tank
+    {
+        SheetMetal=35,
+        ScrapMetal=40,
+        BlowTorch=10,
+        keep [Recipe.GetItemTypes.WeldingMask]/WeldingMask,
+        Result:HugePropaneTank,
+        Time:240,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+        Sound:BlowTorch,
+        CanBeDoneFromFloor:true,
+        OnCreate:Recipe.OnCreate.MakeATank,
+        AnimNode:BlowTorch,
+    }
+}
