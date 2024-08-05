@@ -16,7 +16,7 @@ module TankCrafting
         Sound:BlowTorch,
         CanBeDoneFromFloor:true,
         Prop1:BlowTorch,
-        OnCreate:Recipe.OnCreate.MakeATank,
+        OnCreate:Recipe.OnCreate.CreateEmptyTank,
         AnimNode:BlowTorch,
     }
 }

@@ -16,7 +16,7 @@ module TankCrafting
         OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
         Sound:BlowTorch,
         CanBeDoneFromFloor:true,
-        OnCreate:Recipe.OnCreate.MakeATank,
+        OnCreate:Recipe.OnCreate.CreateEmptyTank,
         AnimNode:BlowTorch,
     }
     recipe Craft A Huge Propane Tank
@@ -30,7 +30,7 @@ module TankCrafting
         OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
         Sound:BlowTorch,
         CanBeDoneFromFloor:true,
-        OnCreate:Recipe.OnCreate.MakeATank,
+        OnCreate:Recipe.OnCreate.CreateEmptyTank,
         AnimNode:BlowTorch,
     }
 }
